@@ -28,8 +28,14 @@ export default defineNuxtPlugin(() => {
   }
 
   addFrozenListener(() => {
-    if (useAppConfig().pwaEnabled && navigator.serviceWorker.controller)
-      navigator.serviceWorker.controller.postMessage(ELK_PAGE_LIFECYCLE_FROZEN)
+    // eslint-disable-next-line no-console
+    console.log('window', window)
+    // eslint-disable-next-line no-console
+    console.log('navigator', window.navigator)
+    // eslint-disable-next-line no-console
+    console.log('service worker', window.navigator.serviceWorker)
+    if (useAppConfig().pwaEnabled && window.navigator?.serviceWorker?.controller)
+      window.navigator?.serviceWorker?.controller.postMessage(ELK_PAGE_LIFECYCLE_FROZEN)
 
     closeDatabases()
   })

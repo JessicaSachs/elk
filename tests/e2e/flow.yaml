@@ -1,0 +1,12 @@
+# flow.yaml
+
+appId: com.elk.app
+---
+- launchApp
+- tapOn: Sign in
+- tapOn:
+    point: '50%,83%'
+- tapOn: Local
+- assertVisible: Local Timeline
+- tapOn: Federated
+- assertVisible: Federated Timeline

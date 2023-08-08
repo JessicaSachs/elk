@@ -1,10 +1,9 @@
-import { isCI, isDevelopment } from 'std-env'
 import type { VitePWANuxtOptions } from '../modules/pwa/types'
 
 export const pwa: VitePWANuxtOptions = {
-  mode: isCI ? 'production' : 'development',
+  mode: 'production',
   // disable PWA only when in preview mode
-  disable: /* temporarily test in CI isPreview || */ (isDevelopment && process.env.VITE_DEV_PWA !== 'true'),
+  // disable: /* temporarily test in CI isPreview || */ (isDevelopment && process.env.VITE_DEV_PWA !== 'true'),
   scope: '/',
   srcDir: './service-worker',
   filename: 'sw.ts',
@@ -27,7 +26,7 @@ export const pwa: VitePWANuxtOptions = {
     }],
   },
   devOptions: {
-    enabled: process.env.VITE_DEV_PWA === 'true',
+    enabled: false,
     type: 'module',
   },
 }

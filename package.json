@@ -30,6 +30,9 @@
     "release": "stale-dep && bumpp && tsx scripts/release.ts"
   },
   "dependencies": {
+    "@capacitor/android": "^5.2.2",
+    "@capacitor/core": "^5.2.2",
+    "@capacitor/ios": "^5.2.2",
     "@emoji-mart/data": "^1.1.2",
     "@fnando/sparkline": "^0.3.10",
     "@iconify-emoji/twemoji": "^1.0.2",
@@ -104,6 +107,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.6",
     "@antfu/ni": "^0.21.4",
+    "@capacitor/cli": "^5.2.2",
     "@types/chroma-js": "^2.4.0",
     "@types/file-saver": "^2.0.5",
     "@types/flat": "^5.0.2",
