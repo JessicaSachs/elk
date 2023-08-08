@@ -3,7 +3,7 @@ import type { VitePWANuxtOptions } from '../modules/pwa/types'
 export const pwa: VitePWANuxtOptions = {
   mode: 'production',
   // disable PWA only when in preview mode
-  // disable: /* temporarily test in CI isPreview || */ (isDevelopment && process.env.VITE_DEV_PWA !== 'true'),
+  disable: true,
   scope: '/',
   srcDir: './service-worker',
   filename: 'sw.ts',
