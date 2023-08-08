@@ -51,6 +51,7 @@
     "boost_count": "{0}",
     "boosted": "Boosted",
     "clear_publish_failed": "Clear publish errors",
+    "clear_save_failed": "Clear save errors",
     "clear_upload_failed": "Clear file upload errors",
     "close": "Close",
     "compose": "Compose",
@@ -426,6 +427,7 @@
     "language": {
       "display_language": "Display Language",
       "label": "Language",
+      "post_language": "Posting Language",
       "status": "Translation status: {0}/{1} ({2}%)",
       "translations": {
         "add": "Add",
@@ -496,6 +498,7 @@
       "enable_data_saving_description": "Save data by preventing attachments from automatically loading.",
       "enable_pinch_to_zoom": "Enable pinch to zoom",
       "github_cards": "GitHub Cards",
+      "github_cards_description": "When a GitHub link is posted, an accessible HTML card using the social graph meta is displayed instead of the social image.",
       "grayscale_mode": "Grayscale mode",
       "hide_account_hover_card": "Hide account hover card",
       "hide_alt_indi_on_posts": "Hide alt indicator on posts",
@@ -511,7 +514,9 @@
       "title": "Experimental Features",
       "use_star_favorite_icon": "Use star favorite icon",
       "user_picker": "User Picker",
+      "user_picker_description": "Displays all avatars of logged accounts in the bottom-left so you can switch quickly between them.",
       "virtual_scroll": "Virtual Scrolling",
+      "virtual_scroll_description": "Use a virtual list in timelines, so a larger number of items can be rendered performantly.",
       "wellbeing": "Wellbeing",
       "zen_mode": "Zen mode",
       "zen_mode_description": "Hide asides unless the mouse cursor is over them. Also hide some elements from the timeline."
@@ -554,6 +559,7 @@
     "loading": "Loading...",
     "publish_failed": "Publish failed",
     "publishing": "Publishing",
+    "save_failed": "Save failed",
     "upload_failed": "Upload failed",
     "uploading": "Uploading..."
   },
